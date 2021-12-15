@@ -7,7 +7,7 @@ Working on this to learn about web3 more, this is not a real site.
 
 After installing npm and node;
 
-```
+```bash
 mkdir lpgbet
 cd lpgbet
 npm init --yes
@@ -31,7 +31,33 @@ npm install --save-dev @nomiclabs/hardhat-waffle@^2.0.0 ethereum-waffle@^3.0.0 c
 
 Install `dotenv` to keep the secret keys etc. in our environment rather than hardcoding them
 
-```
+```bash
 npm install dotenv --save-dev
 ```
 
+Running the sample script to make sure everything is working up to now.
+
+```bash
+> npx hardhat run scripts/sample-script.js
+Compiling 2 files with 0.8.4
+Compilation finished successfully
+Deploying a Greeter with greeting: Hello, Hardhat!
+Greeter deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+```
+
+First, removing the Greeter.sol in contracts folder and creating `LPGBet.sol`
+
+Also, removing the `sample-script.js` in scripts and creating a `run.js` and `deploy.js`
+
+
+The games that first come to my mind are
+- *Heads or Tails*
+- *Powerball*
+- *Jackpot*
+- *Roulette*
+
+But we'll start with the simplest one and see how it goes.
+
+Let's start with **Heads or Tails**
+
+## Heads or Tails
